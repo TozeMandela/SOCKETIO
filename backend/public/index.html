@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>socket</title>
+</head>
+<body>
+    <main class="principal">
+        <div class="container">
+            <article class="intro">
+                <h3>Olá! seja bem vindo</h3>
+                <p>somos a sua solução para os mais diversos problemas existente em aprendizado de linguagem de programação!!!</p>
+                <div class="introduce">
+                    <h4>antes de continuares apresente-se preenchendo o form abaixo</h4>
+                </div>
+            </article>
+            <section class="formPerson">
+
+                <form action="index.html">
+                    <aside class="optform">
+                        <div class="formInput">
+                            <label for="fullname">
+                                Nome completo
+                            </label>
+                            <input type="text" name="fullname" id="fullname">
+                        </div>
+                        <div class="formInput">
+                            <label for="email">
+                                E-mail
+                            </label>
+                            <input type="email" name="email" id="email">
+                        </div>
+                        <div class="formInput">
+                            <label for="natio">
+                                Nacionalidade
+                            </label>
+                            <input type="text" name="natio" id="natio">
+                        </div>
+                        <div class="formInput">
+                            <label for="tlp">
+                                Linguagem de debate
+                            </label>
+                            <select name="tlp" id="tlp">
+                                <option value="">Selecione a Linguagem</option>
+                                <option value="Javascript">Javascript</option>
+                                <option value="typescript">typescript</option>
+                                <option value="Java">Java</option>
+                                <option value="c">c</option>
+                                <option value="c#">c#</option>
+                                <option value="python">python</option>
+                                <option value="PHP">PHP</option>
+                            </select>
+                        </div>
+                        <button type="submit">apresentar-me</button>
+                    </aside>
+                </form>
+            </section>
+            <nav id="chat">
+                <section class="view">
+                    
+                </section>
+                <textarea name="msg" id="msg" class="response"></textarea>
+            </nav>
+        </div>
+    </main>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
